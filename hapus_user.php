@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     if ($data && $data['photo']) {
         $filepath = 'uploads/' . $data['photo'];
         if (file_exists($filepath)) {
-            unlink($filepath); // Hapus file foto dari folder
+            unlink($filepath); //ini untuk menghapus file foto
         }
     }
 
